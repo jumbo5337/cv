@@ -1,0 +1,104 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{classic}
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.88]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Oleg}
+\familyname{Lobanov}
+\email{jumbo5337@gmail.com}
+\social[github]{https://github.com/jumbo5337}
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+    \maketitle
+    \vspace{-10mm}
+
+
+    \section{Education}
+    \cventry{2019--2021}
+    {M.Sc. in Information systems and technologies}
+    {St. Petersburg State University of Telecommunications}
+    {St. Petersburg, Russia}
+    {\textit {with honours}, }
+    {Studied machine learning approaches and software development management}
+
+    \cventry{2015--2019}{B.\,Sc. in Aviation meteorology}{Russian Hydrometeorological State University}{St. Petersburg, Russia}{\textit{with honours}, }
+    {Studied under the WMO program in english language, was interested in hydrodynamic modeling  }
+
+    \subsection{Master thesis}
+    \cvline{title}{\emph{Research and development of an intelligent training app}}
+
+    \subsection{Bachelor thesis}
+    \cvline{title}{\emph{Influence of surface inhomogenity on the vertical motion at the upper level of atmospheric boundary layer}}
+
+    \subsection{Academic Expirience}
+    \cvlistitem {Developed application that analyzes the degree of physical fatigue by an ECG fragment using Keras and Kotlin}
+    \cvlistitem {Developed financial application with back-end and desktop front-end on Kotlin}
+    \cvlistitem {Implement OAuth2 protocol with Facebook with Java and JavaScript}
+    \cvlistitem {Developed desktop app for matrix and graph operations with JavaFX}
+    \cvlistitem {Solved problems with FCNN, CNN, RNN using framework Keras and PyTorch}
+    \cvlistitem {Built hydrodynamic models with DFT and BFT}
+    \cvlistitem {Implemented visualization "Shallow Water" model on python}
+
+    \subsection{Other}
+    \cvline{\small March-July 2019}{Offline course "Java Junior Developer" (Java core, Spring Boot, PostgreSQL), LevelUP St. Petersburg)}
+
+
+    \section{Skills}
+    \cvline{\small Languages}{Kotlin, Java, Python, SQL, Bash, JavaScript}
+    \cvline{\small Frameworks}{Spring Framework (boot, data, security), Netty, JDBC, JAXB, Ktor}
+    \cvline{\small Build systems}{Gradle, Maven, Bazel}
+    \cvline{\small Other}{Apache Kafka, Apache Cassandra, CockroachDB, Docker, Kubernetes,Helm, PostgreSQL, Gitlab-CI, Git, Redis, ClickHouse}
+
+
+    \section{Software Development Experience}
+    \cventry{April 2020 - Present}{Kotlin Developer}{CRPT}{St. Petersburg, Russia}{}{
+        Development and support emission and billing subsystem of National marking system
+        \newline
+        \newline
+        {
+                {\cvlistitem {Implemented high loaded services using Kotlin-coroutines, Kafka, Cassandra, Cockroach}}
+                {\cvlistitem {Developed k8s-migration job for Kafka and CockroachDB (Liquibase)}}
+                {\cvlistitem {Implemented kubernetes cronjob}}
+                {\cvlistitem {Migrated data from HBase to Cassandra and from PostgreSQL to CockroachDB}}
+                {\cvlistitem {Organized data stream to Clickhouse via Kafka }}
+                {\cvlistitem {Written dynamic pipeline generation with Python for Gitlab-CI}}
+                {\cvlistitem {Implemented JAXB code-generation in Bazel}}
+                {\cvlistitem {Setup services communication via Kafka}}
+                {\cvlistitem {Tuned JAsync-driver for better Cockroach load balance}}
+                {\cvlistitem {Develop custom TCP-client based on Netty and implemented custom binary protocols}}
+                {\cvlistitem {Implemented different authorization methods OAuth2, basic auth, signed-jwt)}}
+                {\cvlistitem {Written integration tests with Testcontainers}}
+                {\cvlistitem {Provided integration with foreign system with REST and SOAP protocols}}
+                {\cvlistitem {Fixed hot bugs on production}}
+                {\cvlistitem {Helped QA-team with releases tests}}
+                {\cvlistitem {Performed load tests}}
+        }
+    }
+    \cventry{October 2019 - March 2020}{Java Junior Developer}{Sleki}{St. Petersburg, Russia}{}
+    {
+            {\cvlistitem {Stack: Java, Spring Boot, Project Reactor, PostgreSQL, MongoDB}}
+            {\cvlistitem {Implemented features and fix bugs in Social-oriented REST-application}}
+            {\cvlistitem {Implemented caching for most frequent queries using Spring Caching}}
+            {\cvlistitem {Developed OAuth2 user authentication and authorization server}}
+            {\cvlistitem {Implemented database interaction with Spring Data JPA}}
+            {\cvlistitem {Written integration tests with Testcontainers}}
+    }
+
+
+    \section{Interests}
+    \cvline{History}{\small History of 20th century}
+    \cvline{Sport}{\small Cycling, fitness, rowing, football}
+    \cvline{Hobby}{\small Guitar music}
+\end{document}
