@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}                 % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.88]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+% personal data
+\firstname{Олег}
+\familyname{Лобанов}
+\title{Senior Software Developer}
+\photo[64pt]{1645901191314.jpeg}
+\email{jumbo5337@gmail.com}
+\phone{+7 911 197 10 08}
+\address{Санкт-Петербург}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+    \maketitle
+    \vspace{-10mm}
+    % Skills
+ \section{Навыки}
+    \cvline{\small Languages}{Java, Kotlin, Python, SQL, Bash}
+    \cvline{\small Libraries \& Frameworks}{\small Spring Framework (Boot, webflux, security, data), Netty \newline kotlinx.coroutines, java.util.concurrent, JDBC, JAsync }
+    \cvline{\small Databases}{Cassandra, CockroachDB, PostgreSQL, YDB}
+    \cvline{\small DevOps,Cloud} {GitlabCI, Docker, Kubernetes, Helm}
+    \cvline{\small Test} {JUnit, Testcontainers}
+    \cvline{\small Other}{Kafka, Gradle, Bazel, REST, Microservices, Distributed Systems, gRPC}
+    \section{Иностранные языки}
+    \cvlanguage{English}{B2}{}
+    % Expirience
+    \section{Опыт работы}
+    % CRPT
+    \cventry{Апрель 2020 - наст.время}{Младший программист-разработчик $\rightarrow$ Старший программист-разработчик}{Честный Знак}{Санкт-Петербург}{}
+    {Разрабатываю  Ядро Национальной Системы Маркировки "Честный Знак". \\
+    Система ежедневно эмитирует до 1 млрд кодов и обеспечивает их проверку со скоростью до 20к RPS}
+    \smallskip
+    % Current responsibilites
+    {\cvlistitem {Разрабатываю высоконагруженную систему, распределенную через всю Россию}}
+    {\cvlistitem {Принимаю участие в обсуждении и планировании Архитектуры системы}}
+    {\cvlistitem {Обсуждаю и формализую требования с заказчиками }}
+    {\cvlistitem {Инициирую и провожу крупномасштабные рефакторинги}}
+    {\cvlistitem {Исследую и внедряю новые технологии}}
+    {\cvlistitem {Провожу доклады об опыте внедрения и эксплуатации}}
+
+    {\cvitem{\tiny{c 08/2023 }} {\textit{Старший программист-разработчик}}}
+    {\cvlistitem {Разрабатывал географически распределенную (от Москвы до Владивостока) подсистему проверки кодов с SLA 300 ms }
+    {\cvlistitem {Увеличил суточную пропускную способность эмиссии с 500 млн до 1 млрд кодов }
+    {\cvlistitem {Ускорил подсистему биллинга на 100\% }
+
+    \cvline{\tiny{10/2021 - 08/2023}}{\textit{Программист-разработчик}}
+    {\cvlistitem {Внедрил генеративный CD/CD для монорепозитория}
+    {\cvlistitem {Установил HPA для сервисов с различными принципами работы}
+
+    \cvline{\tiny{04/2020 - 10/2021}}{\textit{Младший программист-разработчик}}
+    {\cvlistitem {Принимал участие в разработке и вводе в эксплуатацию новых подсистем эмиссии и биллинга}}
+    {\cvlistitem {Провёл интеграцию с различными  иностранными, государственными, учётными и криптографическими системами}}
+    {\cvlistitem {Написал патч для Netty драйвера для лучшей балансировки CockroachDB }}
+
+    % Sleki
+    \cventry{\small Октябрь 2019 - Март 2020}{Java Junior Developer}{Sleki}{Санкт-Петербург}{}
+    {Разрабатывал микросервисы для приложения по организации досуга}
+    % Education
+    \section{Образование}
+    % SUT
+    \cventry{2019--2021}
+    { Информационные Системы И Технологии}
+    {СПБГУТ}
+    {Санкт-Петербург}
+    {\textit {Магистратура, с отличием}}
+    {}
+    % RSHU
+    \cventry{2015--2019}{Авиационная Метеорология}{РГГМУ}{Санкт-Петербург}{\textit{Бакалавриат, с отличием}}
+    {}
+    % SUT Master Thesis
+    %\subsection{Thesis's}
+    %\cvline{Master}{\emph{Research and development of the intelligent training app}}
+    %\cvline{bachelor}{\emph{Influence of surface inhomogenity on the vertical motion at the upper level of atmospheric boundary layer}}
+    \end{document}
+
+

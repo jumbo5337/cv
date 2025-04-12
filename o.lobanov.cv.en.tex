@@ -1,0 +1,91 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.88]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Oleg}
+\familyname{Lobanov}
+\title{Senior Software Developer}
+\photo[64pt]{1645901191314.jpeg}
+\email{jumbo5337@gmail.com}
+\phone{+7 911 197 10 08}
+\social[linkedin]{nikadim53}
+\address{Saint Petersburg, Russia}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+    \maketitle
+    \vspace{-10mm}
+    % Skills
+    \section{ Skills }
+    \cvline{\small Languages}{Java, Kotlin, Python, SQL, Bash}
+    \cvline{\small Libraries \& Frameworks}{\small Spring Framework (Boot, webflux, security, data), Netty \newline kotlinx.coroutines, java.util.concurrent, JDBC, JAsync }
+    \cvline{\small Databases}{Cassandra, CockroachDB, PostgreSQL, YDB}
+    \cvline{\small DevOps,Cloud} {GitlabCI, Docker, Kubernetes, Helm}
+    \cvline{\small Test} {JUnit, Testcontainers}
+    \cvline{\small Other}{Kafka, Gradle, Bazel, REST, Microservices, Distributed Systems, gRPC}
+
+    % Languages
+    \section{Languages}
+    \cvlanguage{Russian}{Native}{}
+    \cvlanguage{English}{B2}{}
+    % Expirience
+    \section{Software Development Experience}
+    % CRPT
+    \cventry{April 2020 - Present}{Junior Software Developer $\rightarrow$ Senior Software Developer}{CRPT}{St. Petersburg, Russia}{}
+    {Responsible for development and support core services of National marking system. \\
+    System daily emits up to 1 billion of codes and provide codes check at 20K RPS rate}
+    \smallskip
+    % Current responsibilites
+    {\cvlistitem {Develop highload system which distributed across the Country}}
+    {\cvlistitem {Participate in discussions and development of system architecture}}
+    {\cvlistitem {Collaborate with clients to gather and refine requirements for new features}}
+    {\cvlistitem {Initiate and lead large-scale refactorings}}
+    {\cvlistitem {Explore and adopt new technologies and approaches}}
+    {\cvlistitem {Share case studies on experience of implementation}}
+
+    {\cvitem{\tiny{08/2023 - Present}} {\textit{Senior Software Developer}}}
+    {\cvlistitem {Developed geographically distributed subsystem of codes authenticity checking}
+    {\cvlistitem {Increased emission daily throughput from 500 mln to 1 bln }
+    {\cvlistitem {Speed up billing subsystem perfomance for 100\% }
+
+    \cvline{\tiny{10/2021 - 08/2023}}{\textit{Software Developer}}
+    {\cvlistitem {Implemented CI/CD pipeline generation for monorepository}
+    {\cvlistitem {Adopted HPA for services with different workload}
+
+    \cvline{\tiny{04/2020 - 10/2021}}{\textit{Junior Software Developer}}
+    {\cvlistitem {Take part in development and provide migration on new billing and emission subsystems}}
+    {\cvlistitem {Integrated with foreign, government, accounting and cryptographic information systems}}
+    {\cvlistitem {Applied patch for Netty-based database driver for better CockroachDB balancing}}
+
+    % Sleki
+    \cventry{October 2019 - March 2020}{Java Junior Developer}{Sleki}{St. Petersburg, Russia}{}
+    {Developed microservices for social application}
+    % Education
+    \section{Education}
+    % SUT
+    \cventry{2019--2021}
+    {M.Sc. in Information systems and technologies}
+    {St. Petersburg State University of Telecommunications}
+    {St. Petersburg, Russia}
+    {\textit {with honours}}
+    {Studied machine learning approaches and software development management}
+    % RSHU
+    \cventry{2015--2019}{B.\,Sc. in Aviation meteorology}{Russian Hydrometeorological State University}{St. Petersburg, Russia}{\textit{with honours}}
+    {Studied under the WMO program in english language, was interested in hydrodynamic modeling }
+    % SUT Master Thesis
+    %\subsection{Thesis's}
+    %\cvline{Master}{\emph{Research and development of the intelligent training app}}
+    %\cvline{bachelor}{\emph{Influence of surface inhomogenity on the vertical motion at the upper level of atmospheric boundary layer}}
+    \end{document}
+
+
